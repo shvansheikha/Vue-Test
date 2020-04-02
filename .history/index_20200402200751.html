@@ -8,10 +8,12 @@
 </head>
 <body>
     <div id="root">
+        <ul>
+            <li v-for="name in names" v-text="name"></li>
+        </ul>
 
-        <task>got to store</task>
-        <task>got to bank</task>
-        <task>got to work</task>
+        <input v-model="newName">
+        <button @click="addName">Add name</button>
     </div>
     
 
