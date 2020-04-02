@@ -1,22 +1,15 @@
 Vue.component('message', {
-    props:['title','body'],
-    data(){
-        return {
-            isVisible:true
-        }
-    },
     template: `
-    <article class="message" v-show="isVisible">
+    <article class="message">
             <div class="message-header">
                 <p> {{title}} </p>
-                <button class="delete" aria-label="delete" @click="isVisible=false"></button>
+                <button class="delete" aria-label="delete"></button>
             </div>
             <div class="message-body">
                {{body}}
             </div>
         </article>
-    `,
-  
+    `
 });
 
 

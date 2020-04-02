@@ -6,17 +6,21 @@ Vue.component('message', {
         }
     },
     template: `
-    <article class="message" v-show="isVisible">
+    <article class="message">
             <div class="message-header">
                 <p> {{title}} </p>
-                <button class="delete" aria-label="delete" @click="isVisible=false"></button>
+                <button class="delete" aria-label="delete" @click="hideModel"></button>
             </div>
             <div class="message-body">
                {{body}}
             </div>
         </article>
     `,
-  
+    methods:{
+        hideModel(){
+
+        }
+    }
 });
 
 
