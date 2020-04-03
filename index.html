@@ -17,10 +17,38 @@
 <body>
     <div id="root" class="container">
 
-       <modal v-if="showModal" @close="showModal=false">
-        Lorem Ipsum is simply dummy text of
-       </modal>
-        <button @click="showModal=true">show modal</button>
+       
+       <!--     ul#tabs>li*4>a[href=#] -->
+     <!--  <ul id="tabs">
+          <li><a href="#">About</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">About Our Culture</a></li>
+      </ul> -->
+    <!-- div.tab-panels -->
+
+    <!-- <div class="tab-panels">
+        
+    </div> -->
+
+
+
+    <tabs>
+
+        <tab name="About Us" :selected="true">
+                <h1>Here is the content for the about us tab</h1>
+        </tab>
+
+        <tab name="About Our Vision">
+                <h1>Here is the content for the about our vision</h1>
+        </tab>
+
+        <tab name="About Our Culture">
+                <h1>Here is the content for the about our culture tab</h1>
+        </tab>
+
+    </tabs>
+
+
         
     </div>
 
